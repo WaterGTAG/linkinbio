@@ -1,4 +1,6 @@
 # watergtag/linkinbio
+![Screenshot of link-in-bio page](https://raw.githubusercontent.com/WaterGTAG/linkinbio/refs/heads/main/screenshot.webp)
+
 **Starter link in bio template in HTML/CSS**
 
 When making my own link-in-bio for **[links.watergtag.com](https://links.watergtag.com)**, I realized how amazing it is to make your own link-in-bio page. It's super customizable, but not everyone knows how to code a page like that from scratch. I made a **simple starter template** using parts from my own link-in-bio to allow people to make their own page. You can use the README as a tutorial to get started, or put your code to the test & add completely new features.
