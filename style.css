@@ -1,0 +1,284 @@
+/* Color & font variables */
+:root {
+  --main-bg-color: #ffffff;
+  --main-text-color: #141421;
+  --link-bg-color: #e5e5e5;
+  --link-text-color: #141421;
+  --link-url-color: #6b6b7a;
+  --footer-bg-color: #141417;
+  --footer-text-color: #ffffff;
+  --global-font: Clash Grotesk, sans-serif;
+}
+
+/* All @font-face sprites are used to import font files from the folder. To replace the font
+with another custom font, you must
+  1. Delete ClashGrotesk & add your font of choice
+  2. Add the font through link rel="preload" in index.html
+  3. Add the font in this file through @font-face
+*/
+@font-face {
+    font-family: Clash Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(ClashGrotesk-Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Clash Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(ClashGrotesk-Semibold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Clash Grotesk;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(ClashGrotesk-Bold.ttf) format("truetype")
+}
+
+@media all {
+    body {
+        background-color: var(--main-bg-color);
+        margin: 0;
+    }
+
+    .pagebox {
+        height: auto;
+        outline-style: none;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff0;
+        width: 500px;
+        min-width: 100px;
+        box-shadow: 0 2px 5px #00000073
+    }
+
+    .w-logo {
+        display: block;
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        color: var(--footer-text-color);
+        opacity: 50%;
+        padding-right: 5px
+    }
+
+    .banner-img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        height: 300px;
+        object-fit: cover;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
+
+    .header-banner {
+        position: relative;
+        width: 100%;
+        height: auto
+    }
+
+    .header-pfp {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        margin-top: -100px;
+        position: relative;
+        border: 5px solid var(--main-bg-color);
+        box-sizing: border-box;
+        max-width: 100%;
+        display: block;
+        height: auto
+    }
+
+    .banner-fade-effect {
+        position: relative;
+        width: 100%;
+        background-color: #fff0;
+        background-image: linear-gradient(180deg, #89adff00 67%, var(--main-bg-color));
+        background-size: auto auto;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        aspect-ratio: 3/4;
+        height: 300px;
+        overflow-x: visible;
+        overflow-y: visible;
+        background-position: 0% 0%
+    }
+
+    .watergtag-template-credit-text {
+        margin-top: 0;
+        text-align: center;
+        color: var(--footer-text-color);
+        font-family: var(--global-font);
+        font-weight: 400;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 0%;
+        padding-bottom: 0;
+        padding-right: 0;
+        letter-spacing: 0px
+    }
+
+    .footer-div-color {
+        background-color: var(--footer-bg-color);
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
+    .webstudio-credit-text {
+        margin-top: 0;
+        text-align: center;
+        color: var(--footer-text-color);
+        opacity: 50%;
+        font-family: var(--global-font);
+        font-weight: 400;
+        max-width: 100%;
+        min-width: 0%;
+        padding-bottom: 0;
+        padding-right: 0;
+        letter-spacing: 0px;
+        display: block
+    }
+
+    .webstudio-credit-div {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        text-align: center;
+        height: auto
+    }
+
+    .webstudio-credit {
+        color: #0000ed00
+    }
+
+    .header-name {
+        font-family: Clash Grotesk, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 3em;
+        margin: 0 20px;
+        color: var(--main-text-color);
+    }
+
+    .linkinbio-div {
+        border-radius: 1em;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: clip;
+        overflow-y: clip;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px #0003;
+        background-color: var(--link-bg-color);
+        padding: 10px
+    }
+
+    .linkinbio-img {
+        width: 35px;
+        height: 35px;
+        padding-right: 10px;
+        display: inline-block;
+        flex-grow: 0;
+        flex-shrink: 0;
+        object-fit: contain;
+        box-sizing: border-box;
+        max-width: 100%;
+        display: block;
+        height: auto
+    }
+
+    .linkinbio-title {
+        color: var(--link-text-color);
+        font-family: var(--global-font);
+        font-weight: 600;
+        font-size: 1.2em;
+        line-height: 1;
+        margin-bottom: 1px;
+        margin-top: 0;
+        overflow-x: clip;
+        overflow-y: clip
+    }
+
+    .linkinbio-url {
+        color: var(--link-url-color);
+        font-family: var(--global-font);
+        font-weight: 400;
+        font-size: .8em;
+        line-height: 1;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-overflow: ellipsis;
+        padding-right: 0;
+        overflow-x: clip;
+        overflow-y: clip;
+        width: auto;
+        position: static
+    }
+
+    .linkinbio-text {
+        overflow-x: clip;
+        overflow-y: clip;
+        text-overflow: ellipsis;
+        display: inline-block;
+        flex-grow: 1;
+        flex-shrink: 0;
+        order: 0
+    }
+
+    .linkinbio {
+        color: #0000ed00
+    }
+
+    .footer-copyright-text {
+        margin-top: 10px;
+        text-align: center;
+        color: var(--footer-text-color);
+        font-family: var(--global-font);
+        font-weight: 400;
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 0%;
+        padding-bottom: 0;
+        padding-right: 0;
+        letter-spacing: 0px;
+        font-size: 13px
+    }
+
+    .header-desc {
+        font-family: var(--global-font);
+        font-weight: 600;
+        text-align: center;
+        font-size: 1em;
+        margin: 0 20px 1em;
+        color: var(--main-text-color);
+    }
+
+    footer {
+        margin-top: 29px
+    }
+
+    .watergtag-template-credit {
+        color: #fff0
+    }
+}
+
+@media all and (max-width: 767px) {
+    .pagebox {
+        width: auto
+    }
+}
